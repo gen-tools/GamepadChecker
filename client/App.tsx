@@ -7,7 +7,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { Layout } from "@/components/Layout";
+import ScrollToTop from "@/components/ScrollToTop"; // <-- IMPORT THE NEW COMPONENT
+
+// Import all your page components
 import Index from "./pages/Index";
+// ... (all your other page imports are here) ...
 import GamepadTester from "./pages/GamepadTester";
 import GpuTester from "./pages/GpuTester";
 import MicTester from "./pages/MicTester";
@@ -22,7 +26,9 @@ import MicTesterGuide from "./pages/MicTesterGuide";
 import MidiTesterGuide from "./pages/MidiTesterGuide";
 import NotFound from "./pages/NotFound";
 
+
 const queryClient = new QueryClient();
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider defaultTheme="light" storageKey="gamepad-tester-theme">
@@ -30,8 +36,10 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop /> {/* <-- ADD THE COMPONENT HERE */}
           <Layout>
             <Routes>
+              {/* All your routes are unchanged */}
               <Route path="/" element={<Index />} />
               <Route path="/gamepad-tester" element={<GamepadTester />} />
               <Route path="/gpu-tester" element={<GpuTester />} />
@@ -53,4 +61,5 @@ const App = () => (
     </ThemeProvider>
   </QueryClientProvider>
 );
+
 createRoot(document.getElementById("root")!).render(<App />);
