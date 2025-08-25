@@ -7,7 +7,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://gamepadchecker.com/</loc>
+    <loc>https://gamepad-checker.vercel.app/</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -15,7 +15,7 @@
   
   <!-- Main Gamepad Tester -->
   <url>
-    <loc>https://gamepadchecker.com/gamepad-tester</loc>
+    <loc>https://gamepad-checker.vercel.app/gamepad-tester</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -23,7 +23,7 @@
   
   <!-- GPU Tester -->
   <url>
-    <loc>https://gamepadchecker.com/gpu-tester</loc>
+    <loc>https://gamepad-checker.vercel.app/gpu-tester</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -31,7 +31,7 @@
   
   <!-- Microphone Tester -->
   <url>
-    <loc>https://gamepadchecker.com/mic-tester</loc>
+    <loc>https://gamepad-checker.vercel.app/mic-tester</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -39,7 +39,7 @@
   
   <!-- MIDI Tester -->
   <url>
-    <loc>https://gamepadchecker.com/midi-tester</loc>
+    <loc>https://gamepad-checker.vercel.app/midi-tester</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -47,7 +47,7 @@
   
   <!-- About Page -->
   <url>
-    <loc>https://gamepadchecker.com/about</loc>
+    <loc>https://gamepad-checker.vercel.app/about</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -55,7 +55,7 @@
   
   <!-- Contact Page -->
   <url>
-    <loc>https://gamepadchecker.com/contact</loc>
+    <loc>https://gamepad-checker.vercel.app/contact</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -63,7 +63,7 @@
   
   <!-- Blog -->
   <url>
-    <loc>https://gamepadchecker.com/blog</loc>
+    <loc>https://gamepad-checker.vercel.app/blog</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -71,28 +71,28 @@
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://gamepadchecker.com/blog/gamepad-tester-guide</loc>
+    <loc>https://gamepad-checker.vercel.app/blog/gamepad-tester-guide</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://gamepadchecker.com/blog/gpu-tester-guide</loc>
+    <loc>https://gamepad-checker.vercel.app/blog/gpu-tester-guide</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://gamepadchecker.com/blog/mic-tester-guide</loc>
+    <loc>https://gamepad-checker.vercel.app/blog/mic-tester-guide</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://gamepadchecker.com/blog/midi-tester-guide</loc>
+    <loc>https://gamepad-checker.vercel.app/blog/midi-tester-guide</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -100,7 +100,7 @@
 
   <!-- Privacy Policy -->
   <url>
-    <loc>https://gamepadchecker.com/privacy</loc>
+    <loc>https://gamepad-checker.vercel.app/privacy</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
