@@ -1,23 +1,50 @@
-import "dotenv/config";
-import express from "express";
-import cors from "cors";
-import { handleDemo } from "./routes/demo";
+import express from 'express'
+import { readFileSync } from 'fs'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
+import cors from 'cors'
 
-export function createServer() {
-  const app = express();
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
-  // Middleware
-  app.use(cors());
-  app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
+const app = express()
 
-  // Example API routes
-  app.get("/api/ping", (_req, res) => {
-    const ping = process.env.PING_MESSAGE ?? "ping";
-    res.json({ message: ping });
-  });
+// Middleware
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-  app.get("/api/demo", handleDemo);
+// Example API routes
+app.get("/api/ping", (_req, res) => {
+  const ping = process.env.PING_MESSAGE ?? "ping"
+  res.json({ message: ping })
+})
 
-  return app;
-}
+// You'll need to define handleDemo or remove this line
+// app.get("/api/demo", handleDemo)
+
+// Serve static assets
+app.use(express.static(join(__dirname, '../dist/client')))
+
+// SSR handler
+app.get('*', async (req, res) => {
+  try {
+    // Skip SSR for API routes
+    if (req.path.startsWith('/api/')) {
+      return res.status(404).send('Not found')
+    }
+    
+    const template = readFileSync(join(__dirname, '../dist/client/index.html'), 'utf-8')
+    // Import the server-built entry-server.js
+    const { render } = await import('../dist/server/entry-server.js')
+    const html = template.replace('<!--ssr-outlet-->', render())
+    res.send(html)
+  } catch (error) {
+    console.error('SSR Error:', error)
+    // Fallback to client-side rendering
+    const template = readFileSync(join(__dirname, '../dist/client/index.html'), 'utf-8')
+    res.send(template.replace('<!--ssr-outlet-->', ''))
+  }
+})
+
+export default app
