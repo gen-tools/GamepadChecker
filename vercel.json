@@ -1,7 +1,19 @@
 {
+  "version": 2,
+  "builds": [
+    { "src": "server/index.js", "use": "@vercel/node" },
+    { "src": "dist/client/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/server/index.js" },
+    { "src": "/static/(.*)", "dest": "/dist/client/static/$1" },
+    { "src": "/assets/(.*)", "dest": "/dist/client/assets/$1" },
+    { "src": "/_next/static/(.*)", "dest": "/_next/static/$1" },
+    { "src": "/(.*)", "dest": "/server/index.js" }
+  ],
   "rewrites": [
     {
-      "source": "/((?!api/|_next/|static/|public/|favicon.ico).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
