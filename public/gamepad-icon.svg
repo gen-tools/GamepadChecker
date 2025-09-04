@@ -1,8 +1,12 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="8" fill="#6366f1"/>
-  <path d="M8 14c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v4c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-4z" fill="white"/>
-  <circle cx="12" cy="16" r="1" fill="#6366f1"/>
-  <circle cx="20" cy="16" r="1" fill="#6366f1"/>
-  <rect x="10" y="14" width="2" height="1" rx="0.5" fill="#6366f1"/>
-  <rect x="20" y="14" width="2" height="1" rx="0.5" fill="#6366f1"/>
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gamepad outline -->
+  <path d="M4 8C4 6.34315 5.34315 5 7 5H17C18.6569 5 20 6.34315 20 8V12C20 14.2091 18.2091 16 16 16H8C5.79086 16 4 14.2091 4 12V8Z" fill="#6A7D94"/>
+
+  <!-- D-Pad -->
+  <rect x="8.25" y="9" width="1.5" height="4" rx="0.25" fill="white"/>
+  <rect x="7" y="10.25" width="4" height="1.5" rx="0.25" fill="white"/>
+
+  <!-- Right circular buttons -->
+  <circle cx="15.5" cy="9.5" r="0.75" fill="white"/>
+  <circle cx="17.5" cy="11.5" r="0.75" fill="white"/>
 </svg>
