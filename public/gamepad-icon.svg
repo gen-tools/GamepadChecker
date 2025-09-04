@@ -1,5 +1,5 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Gamepad outline -->
+  <!-- Controller body -->
   <path d="M6 10C6 7.79086 7.79086 6 10 6H22C24.2091 6 26 7.79086 26 10V18C26 20.2091 24.2091 22 22 22H10C7.79086 22 6 20.2091 6 18V10Z" fill="#6A7D94"/>
 
   <!-- D-pad -->
